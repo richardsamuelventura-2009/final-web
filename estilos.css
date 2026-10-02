@@ -1,3 +1,4 @@
+
 html{
     scroll-behavior: smooth;
 }
@@ -11,6 +12,7 @@ body{
     font-family: Arial, sans-serif;
     color: #263238;
     background-color: white;
+    overflow-x: hidden;
 }
 
 .contenedor{
@@ -268,6 +270,7 @@ nav{
 
 .campo input,
 .campo select{
+    width: 100%;
     padding: 12px;
     border: 1px solid #c9d7d5;
     border-radius: 7px;
@@ -437,5 +440,35 @@ footer p{
 
     .carrera-card img{
         height: 220px;
+    }
+}
+
+
+/* CELULAR HORIZONTAL */
+
+@media (max-width: 768px) and (orientation: landscape){
+
+    .hero{
+        padding: 45px 0;
+    }
+
+    .hero h1{
+        font-size: 34px;
+    }
+
+    .hero p:not(.etiqueta){
+        font-size: 16px;
+    }
+
+    .seccion{
+        padding: 45px 0;
+    }
+
+    .carrera-card img{
+        height: 180px;
+    }
+
+    .enlaces{
+        gap: 10px 15px;
     }
 }
